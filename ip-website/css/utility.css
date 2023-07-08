@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --dark-blue: #21355b;
+  --light-blue: #0072bc;
+  --ice-blue: #cfdde9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+i {
+  color: var(--dark-blue);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.btn-outline-primary {
+  border: 3px solid var(--light-blue);
+  color: var(--light-blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--light-blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-outline-secondary {
+  border: 3px solid var(--dark-blue);
+  color: var(--dark-blue);
+  padding: 7px 20px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--dark-blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* SCROLLABLE CALL BTN */
+.call-btn {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 10px;
+  bottom: 22%;
+  right: 2%;
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-btn i {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* SCROLLABLE MSG BTN */
+.msg-btn {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 10px;
+  bottom: 10%;
+  right: 2%;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-btn i {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* SCROLLABLE DRIVERS NAV */
+.scrollable-drivers-nav {
+  position: fixed;
+  width: 150px;
+  height: 300px;
+  top: 35%;
+  left: 0;
+  background-color: var(--dark-blue);
+}
+
+.scrollable-drivers-nav {
+  background-color: var(--dark-blue);
+}
+
+.scrollable-drivers-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scrollable-drivers-nav a {
+  padding: 20px 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.scrollable-drivers-nav a:hover {
+  padding: 20px;
+  background-color: var(--light-blue);
+}
+
+
+#background-video {
+  width: 100vw;
+  height: 1200px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
